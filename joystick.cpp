@@ -10,8 +10,6 @@
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/rfcomm.h>
 
-#include "SerialPort.h"
-
 #define JOY_DEV "/dev/input/js0"
 
 #define FWD 0
@@ -25,8 +23,6 @@ using namespace std;
 int s;
 
 int processed_values[4] = {0,0,0,0};
-
-SerialPort serialPort;
 
 void my_handler(int signal){
            printf("Caught CTRL+C\n");

@@ -1,4 +1,4 @@
 all:	joystick
 
 joystick: joystick.cpp
-	g++ SerialPort.cpp joystick.cpp -o joystick -lbluetooth
+	g++ joystick.cpp -o joystick -lbluetooth
